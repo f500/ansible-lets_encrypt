@@ -1,0 +1,13 @@
+---
+
+certbot_auto_renew: no  # We use our own task
+certbot_auto_renew_options: "--quiet --no-self-upgrade --deploy-hook 'sudo service nginx reload'"
+
+server_templates: []
+#- name: example_short_name
+#  http_conf: "http.conf.j2"
+#  https_conf: "https.conf.j2"
+#  index: app.php
+#  web_root: "/your/path/here"
+#  domains:
+#    - "example.com"

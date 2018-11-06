@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: "Future500 B.V."
+  description: Preloading and loading Lets Encrypt certificates
+  company: Future500
+  license: LGPL-3.0
+  min_ansible_version: 2.0
+  platforms:
+  - name: Debian
+    versions:
+      - wheezy
+      - jessie
+      - stretch
+  galaxy_tags:
+    - web
+    - nginx
+    - letsencrypt
+    - encryption
+    - certificates
+    - ssl
+    - https
+  dependencies:
+    - geerlingguy.certbot
