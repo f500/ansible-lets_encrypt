@@ -1,7 +1,7 @@
 ---
 
 certbot_auto_renew: no  # We use our own task
-certbot_auto_renew_options: "--quiet --no-self-upgrade --deploy-hook 'sudo service nginx reload'"
+certbot_auto_renew_options: "--quiet --no-self-upgrade --renew-hook 'sudo service nginx reload'"
 
 server_templates: []
 #- name: example_short_name
